@@ -11,10 +11,6 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import PostcssPxToViewport from 'postcss-px-to-viewport'
 import mobile from 'postcss-mobile-forever'
 import legacy from '@vitejs/plugin-legacy'
-// const baseURL = (import.meta.env.VITE_BASE_URL as string) || ''
-const baseURL = (import.meta.env)
-
-console.log(baseURL);
 
 // console.log('object', baseURL);
 
@@ -89,6 +85,7 @@ export default defineConfig({
           replace: true, // 是否转换后直接更换属性值
           landscape: false, // 是否处理横屏情况
         }),
+        // pc端显示
         mobile({
           viewportWidth: 750,
           maxDisplayWidth: 600,
