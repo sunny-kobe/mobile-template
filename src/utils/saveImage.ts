@@ -1,7 +1,7 @@
 import html2canvas from "html2canvas";
 
 /**
- * 保存图片
+ * 长按保存图片
  * @param element 选择器
  */
 export function saveImage(element: string): void {
@@ -11,7 +11,7 @@ export function saveImage(element: string): void {
       useCORS: true,
       // logging: true,
       allowTaint: true,
-    }).then((canvas) => {
+    }).then((canvas: any) => {
       const image = canvas.toDataURL('image/png');
       downloadImage(image);
     });

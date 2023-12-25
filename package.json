@@ -9,7 +9,7 @@
     "build:qa": "vite build  --mode qa",
     "build:prod": "vite build --mode production",
     "preview": "vite preview",
-    "test": "vite --mode qa",
+    "test": "vite --mode qa"
   },
   "dependencies": {
     "@vitejs/plugin-legacy": "^5.0.0",

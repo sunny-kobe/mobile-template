@@ -6,7 +6,3 @@ body,
   padding: 0;
 }
 
-/* 解决截图文字偏移的问题 */
-img {
-  display: initial;
-}

@@ -7,20 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AlreadyRecruit: typeof import('./src/components/AlreadyRecruit.vue')['default']
-    AudioPlayer: typeof import('./src/components/AudioPlayer.vue')['default']
-    Captcha: typeof import('./src/components/Captcha.vue')['default']
-    CharacterCard: typeof import('./src/components/CharacterCard.vue')['default']
-    CharacterCarousel: typeof import('./src/components/CharacterCarousel.vue')['default']
-    ConfirmAndShare: typeof import('./src/components/ConfirmAndShare.vue')['default']
-    InviteRecord: typeof import('./src/components/InviteRecord.vue')['default']
-    LotteryAnimation: typeof import('./src/components/LotteryAnimation.vue')['default']
-    LotteryResult: typeof import('./src/components/LotteryResult.vue')['default']
-    PhoneVerification: typeof import('./src/components/PhoneVerification.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    RuleDialog: typeof import('./src/components/RuleDialog.vue')['default']
-    ShareDialog: typeof import('./src/components/ShareDialog.vue')['default']
-    ShareRecord: typeof import('./src/components/ShareRecord.vue')['default']
   }
 }

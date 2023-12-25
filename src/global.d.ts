@@ -1,3 +1,4 @@
+// 行为验证码
 declare class Captcha {
   private static instance;
   private config;

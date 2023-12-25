@@ -3,7 +3,7 @@ import { encrypt, decrypt } from './encry';
 
 const config: globalConfig = {
   type: 'sessionStorage', // 存储类型，localStorage | sessionStorage
-  prefix: 'h5-activity', // 推荐项目名+版本号
+  prefix: 'xxx', // 推荐项目名+版本号
   expires: 24 * 60, // 过期时间，默认为一天，单位为分钟
   isEncrypt: false // 支持加密、解密数据处理
 }
