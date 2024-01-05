@@ -3,7 +3,3 @@
     <RouterView />
   </main>
 </template>
-
-<style>
-#app {}
-</style>
