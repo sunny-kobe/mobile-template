@@ -9,10 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import UnoCSS from 'unocss/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import PostcssPxToViewport from 'postcss-px-to-viewport'
-import mobile from 'postcss-mobile-forever'
 import legacy from '@vitejs/plugin-legacy'
-
-// console.log('object', baseURL);
 
 export default defineConfig({
   resolve: {
@@ -84,22 +81,10 @@ export default defineConfig({
           mediaQuery: true, // 是否在媒体查询的css代码中也进行转换，默认false
           replace: true, // 是否转换后直接更换属性值
           landscape: false, // 是否处理横屏情况
-        }),
-        // pc端显示
-        mobile({
-          viewportWidth: 750,
-          maxDisplayWidth: 600,
-          // rootSelector: "#app",
-          disableDesktop: true,
-          disableLandscape: true,
-          border: false,
-          rootContainingBlockSelectorList: ["kv", "activityTime"],
-        }),
+        })
       ],
     },
   },
-
-
   // https://github.com/vitest-dev/vitest
   test: {
     environment: 'jsdom',
