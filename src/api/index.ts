@@ -1,4 +1,4 @@
-import axiosInstance from '~/api/axios'
+import axiosInstance from '@/api/axios'
 
 // 示例
 export function getActionCode(data: any) {

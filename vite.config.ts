@@ -14,7 +14,7 @@ import legacy from '@vitejs/plugin-legacy'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
   plugins: [
@@ -61,7 +61,9 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
-    UnoCSS(),
+    UnoCSS({
+
+    })
 
     // Vue()
   ],

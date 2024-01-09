@@ -1,7 +1,7 @@
 import { type AxiosInstance } from 'axios'
 
 import { generateSignature, objKeySort } from './signature' // 导入签名生成函数
-import { getStorage } from '~/utils/storage'
+import { getStorage } from '@/utils/storage'
 
 const keys = import.meta.env.VITE_NUXT_KEY as string || ''
 
